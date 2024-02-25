@@ -1,0 +1,32 @@
+---
+title: "Distance Conversion Examples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Distance Conversion Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+#devtools::install_github("unitCoverter")
+library(unitConverter)
+```
+
+
+# Convert feet to meters
+
+We can use the package to convert 5 feet into meters as follows.
+
+```{r dist-example}
+dist_result <- unitConverter:::dist_converter(dist_value = 5, unit_from = "feet", unit_to="meters")
+```
+
+
+five feet is `r dist_result` meters. 

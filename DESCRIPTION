@@ -1,10 +1,10 @@
 Package: unitConverter
-Title: My first package (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Unit Conversion Utilities for Distance, Time, Weight, and Temperature
+Version: 0.1.0
 Authors@R: 
-    person("Batbayar", "Galtbalt", , "first.last@example.com", role = c("aut", "cre"),
+    person("Batbayar", "Galtbalt", , "batbayar.galtbalt@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: The package provides a collection of utility functions for converting distance, time, weight, and temperature values.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -13,4 +13,9 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Suggests: 
-    ggplot2 (>= 3.0.0)
+    ggplot2 (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
